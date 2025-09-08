@@ -1,0 +1,90 @@
+*,
+html,
+body {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 325px;
+    min-height: 100vh;
+}
+
+.content {
+    margin: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    margin-top: 10px;
+    background-color: lightcoral;
+    padding: 24px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+button:hover {
+    background-color: #222222;
+    transition: .3s all ease-in-out
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+input {
+    border: none;
+    background-color: #eaeaea;
+    color: #222222;
+    padding: 16px;
+    font-size: 24px;
+    margin-top: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#pertanyaan {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#loaders {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-top: 10px solid lightcoral;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation: 1.5s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
